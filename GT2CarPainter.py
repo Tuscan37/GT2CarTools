@@ -1,5 +1,14 @@
 import os
 import sys
+import shutil
+
+def PaintID():
+    idp = input("Enter New Color ID: ").upper()
+    if os.path.exists(dir + "//..//Colour" + idp):
+        print("This Color ID already exists! Try a different one.")
+        return PaintID()
+    else:
+        return idp
 
 if len(sys.argv) != 2:
     print("Boowomp")
@@ -10,14 +19,17 @@ if not os.path.exists(dir):
     print("Boowomp")
     sys.exit(2137)
 else:
+    idp = PaintID()
     r = float(input("Red Color Multiplier:"))/255
     g = float(input("Green Color Multiplier:"))/255
     b = float(input("Blue Color Multiplier:"))/255
+    newdir = dir + "//..//Colour" + idp
+    shutil.copytree(dir, newdir)
     for i in range (16):
-        if (os.path.exists(dir + "//ColourPalette" + f'{i:02d}' + ".pal") and os.path.exists(dir + "//PaintMask" + f'{i:02d}' + ".pal")):
-            with open(dir + "//ColourPalette" + f'{i:02d}' + ".pal") as f:
+        if (os.path.exists(newdir + "//ColourPalette" + f'{i:02d}' + ".pal") and os.path.exists(newdir + "//PaintMask" + f'{i:02d}' + ".pal")):
+            with open(newdir + "//ColourPalette" + f'{i:02d}' + ".pal") as f:
                 pal = f.readlines()
-            with open(dir + "//PaintMask" + f'{i:02d}' + ".pal") as f:
+            with open(newdir + "//PaintMask" + f'{i:02d}' + ".pal") as f:
                 mask = f.readlines()
             for j in range (19):
                 if (mask[j] == '248 248 248\n'):
@@ -30,6 +42,6 @@ else:
                         if ints[k] < 0:
                             ints[k] = 0
                     pal[j] = str(ints[0]) + " " + str(ints[1]) + " " + str(ints[2]) + "\n"
-                    with open(dir + "//ColourPalette" + f'{i:02d}' + ".pal","w") as f:
+                    with open(newdir + "//ColourPalette" + f'{i:02d}' + ".pal","w") as f:
                         f.writelines(pal)
 
