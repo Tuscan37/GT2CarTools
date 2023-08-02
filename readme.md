@@ -1,4 +1,4 @@
-GT2PaintEditor and GT2WhiteWasher by Tuscan37
+GT2CarTools by Tuscan37
 
 1. GT2PaintEditor
 
@@ -40,3 +40,17 @@ Select Grayscale Mode:
 1  
 
 The program will only affect colors with the paintmask colors equal 248 248 248.  
+
+3. GT2Gradientor
+
+Works similar to GT2CarPainter but it paints a gradient onto a car.
+
+Usage: python3 GT2Gradientor.py path/to/white/color
+Red Color Multiplier For Start Color: 255  
+Green Color Multiplier For Start Color: 192  
+Blue Color Multiplier For Start Color: 0  
+Red Color Multiplier For End Color: 117  
+Green Color Multiplier For End Color: 0  
+Blue Color Multiplier For End Color: 255  
+Upper Gradient padding in %: 25  
+Lower Gradient padding in %: 5  
