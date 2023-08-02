@@ -31,6 +31,7 @@ a is the additive
 Your goal is to make sure g*m+a is equal or very slightly below 255. Play around with values to achieve the best results.  
 
 Usage example:  
+Enter New Color ID: 30  
 Grayscale Multiplier: 1.3  
 Grayscale Additive: 96  
 Select Grayscale Mode:  
