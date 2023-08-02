@@ -3,9 +3,9 @@ GT2PaintEditor and GT2WhiteWasher by Tuscan37
 1. GT2PaintEditor
 
 Usage: python3 GT2PaintEditor.py path/to/white/color
-WARNING! THIS PROGRAM EDITS THE COLOR! MAKE SURE TO CREATE A DUPLICATE!!!
 
-After a successful launch, input three color components, for example: 
+After a successful launch, input a new ID, three color components, for example: 
+Enter New Color ID: 6A
 Red Color Multiplier: 0
 Green Color Multiplier:161
 Blue Color Multiplier: 255
@@ -15,8 +15,8 @@ The program will only affect colors with the paintmask colors equal 248 248 248.
 2. GT2WhiteWasher
 
 Usage: python3 GT2WhiteWasher.py path/to/non-white/color
-WARNING! THIS PROGRAM EDITS THE COLOR! MAKE SURE TO CREATE A DUPLICATE!!!
-After a successful launch, input a grayscale multiplier, grayscale additive and grayscale mode.
+
+After a successful launch, input a new ID, grayscale multiplier, grayscale additive and grayscale mode.
 There are two grayscale modes:
 Component average
 Brightest of the three components
