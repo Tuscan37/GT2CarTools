@@ -42,6 +42,6 @@ else:
                         if ints[k] < 0:
                             ints[k] = 0
                     pal[j] = str(ints[0]) + " " + str(ints[1]) + " " + str(ints[2]) + "\n"
-                    with open(newdir + "//ColourPalette" + f'{i:02d}' + ".pal","w") as f:
-                        f.writelines(pal)
+            with open(newdir + "//ColourPalette" + f'{i:02d}' + ".pal","w") as f:
+                f.writelines(pal)
 
