@@ -10,7 +10,7 @@ Red Color Multiplier: 0
 Green Color Multiplier:161  
 Blue Color Multiplier: 255  
 
-The program will only affect colors with the paintmask colors equal 248 248 248.
+The program will only affect colors with the paintmask colors equal to 248 248 248.
 
 2. GT2WhiteWasher
 
@@ -39,7 +39,7 @@ Select Grayscale Mode:
 1 - Brightest of Three  
 1  
 
-The program will only affect colors with the paintmask colors equal 248 248 248.  
+The program will only affect colors with the paintmask colors equal to 248 248 248.  
 
 3. GT2Gradientor
 
